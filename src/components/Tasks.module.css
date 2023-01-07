@@ -1,0 +1,107 @@
+.tasks {
+  max-width: 776px;
+  margin: -27px auto 50px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks .createTaskForm {
+  display: flex;
+}
+
+.tasks .createTaskForm input {
+  display: block;
+  height: 54px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-gray-700);
+  color: var(--color-gray-200);
+  flex: 1;
+  margin-right: 8px;
+}
+
+.tasks .createTaskForm input:focus {
+  border-color: var(--color-purple-dark);
+  outline: none;
+}
+
+.tasks .createTaskForm input::placeholder {
+  color: var(--color-gray-300);
+}
+
+.tasks .createTaskForm button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 90px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+  line-height: 1;
+  transition: all linear 0.1s;
+}
+
+.tasks .createTaskForm button:hover {
+  background-color: var(--color-blue);
+}
+
+.tasks .statuses {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks .statuses p {
+  display: flex;
+  align-items: center;
+  color: var(--color-blue);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.tasks .statuses p span {
+  margin-left: 8px;
+  color: var(--color-gray-200);
+  background-color: var(--color-gray-400);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.tasks .statuses .finishedTasks {
+  color: var(--color-purple);
+}
+
+.tasks .tasksList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.tasks .empty {
+  border-top: 1px solid var(--color-gray-400);
+  border-radius: 8px;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasks .empty .image {
+  color: var(--color-gray-400);
+}
+
+.tasks .empty p {
+  color: var(--color-gray-300);
+  text-align: center;
+  line-height: 1.4;
+}

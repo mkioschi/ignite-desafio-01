@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--color-gray-700);
+  height: 12.5rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .logo {
+  margin-top: -1.5rem;
+}
